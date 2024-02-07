@@ -1,18 +1,7 @@
 import React from "react";
-import Sidemenu from "./sidemenu";
 
 const AllTasks = () => {
-  return (
-    <div className="">
-      <h2>dashboard</h2>
-      <h2>dashboard</h2>
-      <h2>dashboard</h2>
-      <h2>dashboard</h2>
-      <h2>dashboard</h2>
-      <h2>dashboard</h2>
-      <h2>dashboard</h2>
-    </div>
-  );
+  return <div className=""></div>;
 };
 
 export default AllTasks;
