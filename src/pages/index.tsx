@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="flex-1">
+    <main className="">
       <AllTasks />
     </main>
   );
