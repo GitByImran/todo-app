@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Appbar from "./shared/appbar";
-import { TaskProvider } from "./context/taskContext";
+import { TaskProvider } from "../context/taskContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

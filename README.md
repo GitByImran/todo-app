@@ -1,41 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Todo List App
 
-## Getting Started
+This repository contains code for a simple Todo List web application built using React. The application allows users to add, edit, delete, and mark tasks as completed. Additionally, users can filter tasks based on priority and status.
 
-First, run the development server:
+### Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Add Task**: Users can add new tasks to the list by entering task text and selecting a priority level.
+- **Edit Task**: Tasks can be edited by clicking on the edit button and modifying the task text.
+- **Delete Task**: Tasks can be deleted from the list by clicking on the delete button.
+- **Mark Task as Completed**: Tasks can be marked as completed by clicking on the checkbox icon.
+- **Filter by Priority**: Users can filter tasks based on priority levels (Regular or Important).
+- **Filter by Status**: Users can filter tasks based on their status (Completed or Incomplete).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Components
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#### 1. Appbar (`Appbar.jsx`)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The Appbar component displays the application's title and summary statistics, including the total number of tasks and completed tasks.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### 2. AddTask (`AddTask.jsx`)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The AddTask component allows users to input new tasks and select their priority level. It includes functionality to add the task to the list.
 
-## Learn More
+#### 3. AllTasks (`AllTasks.jsx`)
 
-To learn more about Next.js, take a look at the following resources:
+The AllTasks component displays the list of tasks. It provides options to edit, delete, and mark tasks as completed. Users can also filter tasks based on priority and status.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Context and State Management
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The application uses React context and state management to manage tasks. The `TaskContext` provides methods to add, delete, edit, and mark tasks as completed. Task data is stored in the local storage to persist tasks across sessions.
 
-## Deploy on Vercel
+### Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run the application locally:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# todo-app
+1. Clone the repository: `git clone <repository-url>`
+2. Install dependencies: `pnpm install`
+3. Run the development server: `npm run dev`
+
+### Technologies Used
+
+- ReactJs
+- NextJs
+- JavaScript
+- Tailwind CSS
+- Shadcn UI
+
+### Credits
+
+This application was created by Imran Hasan Ovi. Feel free to contribute or provide feedback!

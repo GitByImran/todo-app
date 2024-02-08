@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTaskContext } from "../context/taskContext";
+import { useTaskContext } from "../../context/taskContext";
 import AddTask from "./addTask";
 import { Button } from "@/components/ui/button";
 import { Check, CheckSquare, PenSquare, Star, Trash, X } from "lucide-react";
