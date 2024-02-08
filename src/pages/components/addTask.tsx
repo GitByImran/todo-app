@@ -24,18 +24,18 @@ const AddTask = () => {
 
   return (
     <div>
-      <div className="mb-5 space-y-2">
+      <div className="mb-5 space-y-2 space-x-2">
         <input
           type="text"
           value={newTaskText}
           onChange={(e) => setNewTaskText(e.target.value)}
           placeholder="Enter a new task"
-          className="border outline-blue-500 rounded px-4 py-2 mr-2"
+          className="border outline-blue-500 rounded px-4 py-2"
         />
         <select
           value={priority}
           onChange={(e) => setPriority(e.target.value)}
-          className="h-10 border outline-blue-500 rounded px-2 py-1 mx-2"
+          className="h-10 border outline-blue-500 rounded px-2 py-1"
         >
           <option value="" disabled>
             Set Priority
